@@ -1,0 +1,7 @@
+signal_path,sample_rate,label,group_id,split,bearing_model,rpm,load,load_unit
+normal_train.npy,12000,normal,recording_01,train,6205,1797,1,hp
+inner_train.npy,12000,inner,recording_02,train,6205,1797,1,hp
+normal_val.npy,12000,normal,recording_03,val,6205,1772,2,hp
+inner_val.npy,12000,inner,recording_04,val,6205,1772,2,hp
+normal_test.npy,12000,normal,recording_05,test,6205,1750,3,hp
+inner_test.npy,12000,inner,recording_06,test,6205,1750,3,hp

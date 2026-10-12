@@ -1,0 +1,13 @@
+{
+  "signal_encoder": "resnet18",
+  "input_kind": "png",
+  "text_model": "roberta-base",
+  "freeze_text": true,
+  "pretrained_signal": true,
+  "fusion": "text",
+  "height": 224,
+  "width": 224,
+  "projection_dim": 256,
+  "batch_size": 16,
+  "epochs": 30
+}

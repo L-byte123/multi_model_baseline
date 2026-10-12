@@ -1,0 +1,8 @@
+{
+  "signal_encoder": "resnet18",
+  "input_kind": "png",
+  "fusion": "text_only",
+  "text_model": "roberta-base",
+  "freeze_text": true,
+  "epochs": 30
+}

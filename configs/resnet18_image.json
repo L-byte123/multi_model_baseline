@@ -1,0 +1,10 @@
+{
+  "signal_encoder": "resnet18",
+  "input_kind": "png",
+  "fusion": "image",
+  "pretrained_signal": true,
+  "height": 224,
+  "width": 224,
+  "projection_dim": 256,
+  "epochs": 30
+}

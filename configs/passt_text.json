@@ -1,0 +1,14 @@
+{
+  "signal_encoder": "passt",
+  "input_kind": "spectrogram",
+  "text_model": "roberta-large",
+  "freeze_text": true,
+  "freeze_signal": false,
+  "pretrained_signal": true,
+  "fusion": "text",
+  "height": 128,
+  "width": 256,
+  "projection_dim": 256,
+  "batch_size": 8,
+  "epochs": 30
+}

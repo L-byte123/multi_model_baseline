@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-model-baseline"
+version = "0.1.0"
+description = "Time-frequency and operating-condition text fusion for fault diagnosis"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "torch>=2.4,<2.6", "Pillow>=10,<12"]
+
+[project.optional-dependencies]
+text = ["transformers==4.49.0"]
+image = ["torchvision>=0.19,<0.21"]
+passt = ["hear21passt==0.0.26", "timm==0.9.16", "torchaudio>=2.4,<2.6", "torchvision>=0.19,<0.21"]
+
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+mm-baseline = "mm_baseline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mm_baseline*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
